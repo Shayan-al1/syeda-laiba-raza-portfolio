@@ -47,12 +47,12 @@ function buildRunway(canvas, S, M, onLook) {
   LOOKS.forEach(([, , , key], i) => {
     const side = i === last ? 0 : (i % 2 ? 1 : -1), im = IMG[key], h = i === last ? 2.7 : 3.1, w = h * im.w / im.h, z = Lz(i);
     const pm = new THREE.MeshBasicMaterial({ color: 0x2a1a20, side: THREE.DoubleSide });
-    new THREE.TextureLoader().load(im.src, t => { pm.map = t; pm.color.set(0xffffff); pm.needsUpdate = true; });
+    /* One download and one texture per dress, shared by the frame and its reflection */
+    new THREE.TextureLoader().load(im.src, t => { pm.map = t; pm.color.set(0xffffff); pm.needsUpdate = true; rm.uniforms.uMap.value = t; rm.uniforms.uOp.value = 0.5; });
     const frame = new THREE.Mesh(new THREE.PlaneGeometry(w + 0.14, h + 0.14), new THREE.MeshBasicMaterial({ color: 0xf2d7a0, side: THREE.DoubleSide })); frame.position.z = -0.01;
     const grp = new THREE.Group(); grp.add(frame, new THREE.Mesh(new THREE.PlaneGeometry(w, h), pm)); grp.position.set(side * 1.7, h / 2 + 0.12, z); scene.add(grp); gm.push([grp, side, i]);
     /* Mirror image under the floor: brightest at the base of the frame, fading with depth and with distance */
     const rm = new THREE.ShaderMaterial({ uniforms: { uMap: { value: null }, uOp: { value: 0 } }, vertexShader: REF_V, fragmentShader: REF_F, transparent: true, depthWrite: false, side: THREE.DoubleSide });
-    new THREE.TextureLoader().load(im.src, t => { rm.uniforms.uMap.value = t; rm.uniforms.uOp.value = 0.5; });
     const rg = new THREE.Group(); rg.add(new THREE.Mesh(new THREE.PlaneGeometry(w, h), rm)); rg.scale.y = -1; rg.position.set(side * 1.7, -(h / 2 + 0.12), z); rg.renderOrder = 1; scene.add(rg); gm.push([rg, side, i]);
     const bmat = new THREE.ShaderMaterial({ uniforms: { uTime: { value: 0 }, uI: { value: 1 } }, vertexShader: BEAM_V, fragmentShader: BEAM_F, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide });
     const beam = add(new THREE.Mesh(new THREE.CylinderGeometry(0.12, 1.35, 7.6, 48, 1, true), bmat), { position: new THREE.Vector3(side * 1.7, 3.8, z), renderOrder: 2 });
