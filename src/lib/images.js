@@ -20,6 +20,11 @@ import mb1 from '../assets/work/mb1.jpg';
 import mb2 from '../assets/work/mb2.jpg';
 import mb3 from '../assets/work/mb3.jpg';
 import mi1 from '../assets/work/mi1.jpg';
+import nm1 from '../assets/work/nm1.jpg';
+import nm2 from '../assets/work/nm2.jpg';
+import nm3 from '../assets/work/nm3.jpg';
+import nm5 from '../assets/work/nm5.jpg';
+import nm6 from '../assets/work/nm6.jpg';
 import n01 from '../assets/work/n01.jpg';
 import n02 from '../assets/work/n02.jpg';
 import n03 from '../assets/work/n03.jpg';
@@ -96,6 +101,11 @@ export const IMG = {
   mb2: { src: mb2, w: 786, h: 1150 },
   mb3: { src: mb3, w: 795, h: 1150 },
   mi1: { src: mi1, w: 866, h: 1150 },
+  nm1: { src: nm1, w: 1400, h: 989 },
+  nm2: { src: nm2, w: 1400, h: 989 },
+  nm3: { src: nm3, w: 1400, h: 989 },
+  nm5: { src: nm5, w: 1400, h: 989 },
+  nm6: { src: nm6, w: 1400, h: 989 },
   n01: { src: n01, w: 619, h: 1100 },
   n02: { src: n02, w: 619, h: 1100 },
   n03: { src: n03, w: 619, h: 1100 },

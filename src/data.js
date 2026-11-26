@@ -58,6 +58,8 @@ export const ARCH = [
   ["e05", "ethnic", "Full-length printed shirt", "Floral print on deep green."],
   ["e06", "ethnic", "Gharara short shirt, round daman", "Gold embroidery on ivory with a rounded hem."],
   ["e10", "ethnic", "Black embroidery, gol daaman", "Gold embroidery on black with a rounded hem."],
+  ["nm5", "ethnic", "Nomadic Embellishment: self print & border", "Half-drop self print of fleur and tile flower, with the hem border."],
+  ["nm6", "ethnic", "Nomadic Embellishment: final print", "Front, back, sleeve and trouser panels of a summer digital-print co-ord set."],
   ["ux1", "unisex", "Oversized snap-button hoodie & cashmere coat", "Two looks on models."],
   ["ux2", "unisex", "Oversized sweat & three-layer tee", "Two looks on models."],
   ["n18", "unisex", "Hoodie flat: tan, front", "Technical drawing."],
@@ -87,7 +89,10 @@ export const ARCH = [
   ["tx1", "textile", "Beadwork on organza", "Pearls, crystals and glass beads graded from sparse to dense."],
   ["tx3", "textile", "Glitter appliqué", "Gold and silver glitter pieces laid out on organza in a hoop."],
   ["tx6", "textile", "Leaf pieces", "Leaf-shaped pieces with contour-line embroidery."],
-  ["tx4", "textile", "Mesh fabric", "Hexagonal white mesh used for the sheer layers."]
+  ["tx4", "textile", "Mesh fabric", "Hexagonal white mesh used for the sheer layers."],
+  ["nm1", "textile", "Nomadic Embellishment: motif research", "Tile star, quatrefoil, tribal sun and fleur finial, beside her pencil sketch."],
+  ["nm2", "textile", "Nomadic Embellishment: digitization", "A pencil quarter traced as clean shapes, then mirrored four times into one motif."],
+  ["nm3", "textile", "Nomadic Embellishment: coloured motif", "The motif in a pastel summer palette with mauve."]
 ];
 /* ---------- Design files: every piece as a small tech pack. Add more pictures to an item's `pics` list and they appear automatically. ---------- */
 export const TBA = null;
@@ -119,6 +124,7 @@ export const ITEMS = [
   {"id": "printshirt", "cat": "ethnic", "name": "Full-length printed shirt", "desc": "A full-length shirt in a floral print on deep green.", "specs": [["Category", "Ethnic wear"], ["Garment", "Shirt"], ["Length", "Full length"], ["Technique", "Print"], ["Colourway", "Deep green, florals"], ["Year", TBA]], "pics": [["e05", "Artwork"]]},
   {"id": "gharara", "cat": "ethnic", "name": "Gharara short shirt", "desc": "A short shirt for a gharara with gold embroidery on ivory and a rounded hem (round daman).", "specs": [["Category", "Ethnic wear"], ["Garment", "Short shirt for gharara"], ["Hem", "Round daman"], ["Technique", "Embroidery"], ["Colourway", "Ivory and gold"], ["Year", TBA]], "pics": [["e06", "Artwork"]]},
   {"id": "goldaaman", "cat": "ethnic", "name": "Black embroidered shirt, gol daaman", "desc": "Gold embroidery on black with a rounded hem (gol daaman).", "specs": [["Category", "Ethnic wear"], ["Garment", "Shirt"], ["Hem", "Gol daaman"], ["Technique", "Embroidery"], ["Colourway", "Black and gold"], ["Year", TBA]], "pics": [["e10", "Artwork"]]},
+  {"id": "nomadic", "cat": "ethnic", "name": "Nomadic Embellishment co-ord set", "desc": "A summer two-piece digital print set: a calf-length shirt with a V-yoke of medallions and a palazzo, printed with a half-drop self print and a sun, fleur and quatrefoil hem border.", "specs": [["Category", "Ethnic wear"], ["Garment", "Shirt and palazzo co-ord set"], ["Technique", "Digital print"], ["Season", "Summer"], ["Colourway", "Sea Salt"], ["Brief", "Junior designer trial task"]], "pics": [["nm5", "Self print & border"], ["nm6", "Final print design"]]},
   {"id": "ux1", "cat": "unisex", "name": "Snap-button hoodie & cashmere coat", "desc": "An oversized snap-button hoodie and a full-length cashmere coat, styled as unisex casual looks.", "specs": [["Category", "Unisex designs"], ["Garments", "Oversized hoodie, full-length coat"], ["Fabric", "Cashmere (coat)"], ["Year", TBA]], "pics": [["ux1", "On models"]]},
   {"id": "ux2", "cat": "unisex", "name": "Oversized sweat & three-layer tee", "desc": "An oversized sweatshirt and a comfortable three-layer tee, styled as unisex casual looks.", "specs": [["Category", "Unisex designs"], ["Garments", "Oversized sweat, three-layer tee"], ["Year", TBA]], "pics": [["ux2", "On models"]]},
   {"id": "hoodie", "cat": "unisex", "name": "Hoodie flats", "desc": "Front and back technical drawings of a hoodie in tan and black. The flats carry the Lucido label.", "specs": [["Category", "Tech flat"], ["Garment", "Hoodie"], ["Views", "Front and back"], ["Colourways", "Tan, black"], ["Measurements", TBA]], "pics": [["n18", "Tan, front"], ["n23", "Tan, back"], ["n20", "Black, front"], ["n21", "Black, back"]]},
@@ -143,7 +149,8 @@ export const ITEMS = [
   {"id": "tx1", "cat": "textile", "name": "Beadwork on organza", "desc": "Pearls, crystals and glass beads graded from sparse at the top to dense at the bottom.", "specs": [["Category", "Textile"], ["Technique", "Hand beading"], ["Base", "Organza"], ["Used in", TBA]], "pics": [["tx1", "Sample"]]},
   {"id": "tx3", "cat": "textile", "name": "Glitter appliqué", "desc": "Gold and silver glitter pieces laid out on organza in an embroidery hoop.", "specs": [["Category", "Textile"], ["Technique", "Appliqué"], ["Base", "Organza"], ["Used in", TBA]], "pics": [["tx3", "Sample"]]},
   {"id": "tx6", "cat": "textile", "name": "Leaf pieces", "desc": "Leaf-shaped pieces with contour-line embroidery, made for the leaf dress.", "specs": [["Category", "Textile"], ["Technique", "Line embroidery"], ["Used in", "Leaf dress"]], "pics": [["tx6", "Sample"]]},
-  {"id": "tx4", "cat": "textile", "name": "Mesh fabric", "desc": "Hexagonal white mesh used for the sheer layers.", "specs": [["Category", "Textile"], ["Material", "Mesh"], ["Used in", TBA]], "pics": [["tx4", "Sample"]]}
+  {"id": "tx4", "cat": "textile", "name": "Mesh fabric", "desc": "Hexagonal white mesh used for the sheer layers.", "specs": [["Category", "Textile"], ["Material", "Mesh"], ["Used in", TBA]], "pics": [["tx4", "Sample"]]},
+  {"id": "nomadic-motif", "cat": "textile", "name": "Nomadic Embellishment motif", "desc": "Ornament that travels: tiles, tent textiles, sun marks and finials, redrawn by hand. Her pencil quarter was digitized, mirrored into a symmetrical motif and coloured in a pastel summer palette.", "specs": [["Category", "Textile"], ["Technique", "Hand drawing, digitization"], ["Symmetry", "Quarter, mirrored ×4"], ["Used in", "Nomadic Embellishment co-ord set"]], "pics": [["nm1", "Motif research"], ["nm2", "Hand-drawn digitization"], ["nm3", "Coloured motif"]]}
 ];
 /* ---------- From her CV ---------- */
 export const ABOUT = 'A fashion designer with a passion for creating innovative and stylish designs. My goal is to combine fashion with art to create clothing that is both visually appealing and comfortable to wear. I\u2019m a creative problem solver, always looking for new ways to approach design challenges, and comfortable working with both traditional and modern production methods.';
