@@ -49,8 +49,6 @@ import n21 from '../assets/work/n21.jpg';
 import n22 from '../assets/work/n22.jpg';
 import n23 from '../assets/work/n23.jpg';
 import n24 from '../assets/work/n24.jpg';
-import n25 from '../assets/work/n25.jpg';
-import n26 from '../assets/work/n26.jpg';
 import n27 from '../assets/work/n27.jpg';
 import n28 from '../assets/work/n28.jpg';
 import n29 from '../assets/work/n29.jpg';
@@ -58,7 +56,6 @@ import n30 from '../assets/work/n30.jpg';
 import n31 from '../assets/work/n31.jpg';
 import n32 from '../assets/work/n32.jpg';
 import n33 from '../assets/work/n33.jpg';
-import n34 from '../assets/work/n34.jpg';
 import n35 from '../assets/work/n35.jpg';
 import sk1 from '../assets/work/sk1.jpg';
 import sk2 from '../assets/work/sk2.jpg';
@@ -67,7 +64,6 @@ import sk4 from '../assets/work/sk4.jpg';
 import tx1 from '../assets/work/tx1.jpg';
 import tx2 from '../assets/work/tx2.jpg';
 import tx3 from '../assets/work/tx3.jpg';
-import tx4 from '../assets/work/tx4.jpg';
 import tx5 from '../assets/work/tx5.jpg';
 import tx6 from '../assets/work/tx6.jpg';
 import ux1 from '../assets/work/ux1.jpg';
@@ -130,8 +126,6 @@ export const IMG = {
   n22: { src: n22, w: 825, h: 1100 },
   n23: { src: n23, w: 900, h: 900 },
   n24: { src: n24, w: 825, h: 1100 },
-  n25: { src: n25, w: 825, h: 1100 },
-  n26: { src: n26, w: 900, h: 850 },
   n27: { src: n27, w: 870, h: 1122 },
   n28: { src: n28, w: 684, h: 1122 },
   n29: { src: n29, w: 576, h: 1024 },
@@ -139,7 +133,6 @@ export const IMG = {
   n31: { src: n31, w: 800, h: 1100 },
   n32: { src: n32, w: 619, h: 1100 },
   n33: { src: n33, w: 619, h: 1100 },
-  n34: { src: n34, w: 619, h: 1100 },
   n35: { src: n35, w: 647, h: 1150 },
   sk1: { src: sk1, w: 480, h: 853 },
   sk2: { src: sk2, w: 480, h: 853 },
@@ -148,7 +141,6 @@ export const IMG = {
   tx1: { src: tx1, w: 480, h: 853 },
   tx2: { src: tx2, w: 768, h: 1024 },
   tx3: { src: tx3, w: 480, h: 853 },
-  tx4: { src: tx4, w: 480, h: 852 },
   tx5: { src: tx5, w: 480, h: 853 },
   tx6: { src: tx6, w: 480, h: 853 },
   ux1: { src: ux1, w: 1000, h: 667 },

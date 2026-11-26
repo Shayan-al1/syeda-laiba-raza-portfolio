@@ -13,7 +13,7 @@ export const DESIGNS = [
   ['Leaf dress', [['Prototype', 'dr1'], ['Textile', 'tx6'], ['Dress', 'leaf']]],
   ['Winged gown', [['Sketch', 'sk2'], ['Dress', 'wing']]]
 ];
-export const CATS = [["all", "All"], ["collection", "Collection"], ["draping", "Draping"], ["prototype", "Prototypes"], ["ethnic", "Ethnic wear"], ["unisex", "Unisex designs"], ["digital", "Digital illustration"], ["manual", "Manual illustration"], ["sketch", "Sketches"], ["moodboard", "Moodboards"], ["textile", "Textiles"]];
+export const CATS = [["all", "All"], ["collection", "Collection"], ["draping", "Draping"], ["prototype", "Prototypes"], ["ethnic", "Ethnic wear"], ["unisex", "Unisex designs"], ["digital", "Digital illustration"], ["manual", "Manual illustration"], ["sketch", "Sketches"], ["flat", "Flat sketches"], ["moodboard", "Moodboards"], ["textile", "Textiles"], ["sample", "Samples"]];
 export const ARCH = [
   ["d3", "collection", "Moth’s Wings", "Layered petals in blue and pink with butterfly clasps and a long train."],
   ["d2", "collection", "Embroidered Velvet", "Feathered ruffle cape and peplum over a pink mesh skirt."],
@@ -34,15 +34,12 @@ export const ARCH = [
   ["n14", "draping", "Draping final, back", "Deep V back with a ruffle."],
   ["n33", "draping", "Draping 3 final: tulle overlay gown", "Sheer tulle over a textured bodice, with a black ruffled hem."],
   ["n32", "draping", "Draping 3, wider view", "The gown in the studio."],
-  ["n34", "draping", "Draping 3, side", "Side view of the tulle drape."],
   ["n01", "draping", "Pleated bodice & layered skirt", "Pleated bodice with an asymmetric layered skirt."],
   ["n02", "draping", "Pleated bodice & layered skirt, side", "Side view."],
   ["dr2", "prototype", "Prototype: Moth’s Wings bodice", "Calico with wide shoulder wings and a bow at the waist."],
   ["dr1", "prototype", "Prototype: leaf dress", "Hand-cut leaf shapes pinned and layered on the form."],
-  ["n25", "prototype", "Hooded corset gown", "Calico hood, laced corset and flared peplum."],
   ["n22", "prototype", "Hooded corset gown, hood", "Hood and peplum."],
   ["n24", "prototype", "Hooded corset gowns, pair", "Two versions in the studio."],
-  ["n26", "prototype", "Hooded corset gowns, three", "Three versions side by side."],
   ["n03", "prototype", "Pleated shirt dress", "Calico with a pleated front and a flared skirt."],
   ["n06", "prototype", "Ruffle-shoulder peplum", "Front and back, with a ruffled shoulder."],
   ["n30", "prototype", "Asymmetric draped dress", "Calico draped asymmetrically on the form."],
@@ -62,10 +59,6 @@ export const ARCH = [
   ["nm6", "ethnic", "Nomadic Embellishment: final print", "Front, back, sleeve and trouser panels of a summer digital-print co-ord set."],
   ["ux1", "unisex", "Oversized snap-button hoodie & cashmere coat", "Two looks on models."],
   ["ux2", "unisex", "Oversized sweat & three-layer tee", "Two looks on models."],
-  ["n18", "unisex", "Hoodie flat: tan, front", "Technical drawing."],
-  ["n23", "unisex", "Hoodie flat: tan, back", "Technical drawing."],
-  ["n20", "unisex", "Hoodie flat: black, front", "Technical drawing."],
-  ["n21", "unisex", "Hoodie flat: black, back", "Technical drawing."],
   ["n28", "digital", "Assignment 06: purple draped dress", "Digital illustration."],
   ["n27", "digital", "Red gown", "Digital illustration of a gown with a high slit."],
   ["zm1", "digital", "After Zuhair Murad: Spring collection", "Illustration of a runway look, with the reference beside it."],
@@ -80,23 +73,26 @@ export const ARCH = [
   ["sk2", "sketch", "Sketch: winged gown", "A fitted gown with wing sleeves and a flared hem."],
   ["sk3", "sketch", "Sketchbook pages", "Early pencil studies of silhouettes and sleeves."],
   ["sk4", "sketch", "Sketch: draped sleeve", "A wing-like pleated sleeve with an organza ruffle skirt."],
+  ["n18", "flat", "Hoodie flat: tan, front", "Technical drawing."],
+  ["n23", "flat", "Hoodie flat: tan, back", "Technical drawing."],
+  ["n20", "flat", "Hoodie flat: black, front", "Technical drawing."],
+  ["n21", "flat", "Hoodie flat: black, back", "Technical drawing."],
   ["mb1", "moodboard", "Murder Mystery", "Moodboard."],
   ["mb2", "moodboard", "Persian Desi Wedding", "Moodboard."],
   ["n35", "moodboard", "Rajasthan", "Moodboard."],
   ["mb3", "moodboard", "Tum Se Hi", "Moodboard."],
-  ["tx5", "textile", "Butterfly embroidery", "Rose-gold thread and crystal butterfly on organza."],
-  ["tx2", "textile", "Thread insects", "A net of black thread joining tiny hand-stitched insects on sheer cloth."],
-  ["tx1", "textile", "Beadwork on organza", "Pearls, crystals and glass beads graded from sparse to dense."],
-  ["tx3", "textile", "Glitter appliqué", "Gold and silver glitter pieces laid out on organza in a hoop."],
-  ["tx6", "textile", "Leaf pieces", "Leaf-shaped pieces with contour-line embroidery."],
-  ["tx4", "textile", "Mesh fabric", "Hexagonal white mesh used for the sheer layers."],
+  ["tx5", "sample", "Butterfly embroidery", "Rose-gold thread and crystal butterfly on organza."],
+  ["tx2", "sample", "Thread insects", "A net of black thread joining tiny hand-stitched insects on sheer cloth."],
+  ["tx1", "sample", "Beadwork on organza", "Pearls, crystals and glass beads graded from sparse to dense."],
+  ["tx3", "sample", "Glitter appliqué", "Gold and silver glitter pieces laid out on organza in a hoop."],
+  ["tx6", "sample", "Leaf pieces", "Leaf-shaped pieces with contour-line embroidery."],
   ["nm1", "textile", "Nomadic Embellishment: motif research", "Tile star, quatrefoil, tribal sun and fleur finial, beside her pencil sketch."],
   ["nm2", "textile", "Nomadic Embellishment: digitization", "A pencil quarter traced as clean shapes, then mirrored four times into one motif."],
   ["nm3", "textile", "Nomadic Embellishment: coloured motif", "The motif in a pastel summer palette with mauve."]
 ];
 /* ---------- Design files: every piece as a small tech pack. Add more pictures to an item's `pics` list and they appear automatically. ---------- */
 export const TBA = null;
-export const FCATS = [["collection", "Collection"], ["draping", "Draping"], ["prototype", "Prototypes"], ["ethnic", "Ethnic wear"], ["unisex", "Unisex designs"], ["digital", "Digital illustration"], ["manual", "Manual illustration"], ["sketch", "Sketches"], ["moodboard", "Moodboards"], ["textile", "Textiles"]];
+export const FCATS = [["collection", "Collection"], ["draping", "Draping"], ["prototype", "Prototypes"], ["ethnic", "Ethnic wear"], ["unisex", "Unisex designs"], ["digital", "Digital illustration"], ["manual", "Manual illustration"], ["sketch", "Sketches"], ["flat", "Flat sketches"], ["moodboard", "Moodboards"], ["textile", "Textiles"], ["sample", "Samples"]];
 export const one = (id, cat, name, key, desc, rows) => ({ id, cat, name, desc, specs: rows, pics: [[key, name]] });
 export const ITEMS = [
   {"id": "petal", "cat": "collection", "name": "Moth’s Wings", "desc": "Layered petals in blue and pink with butterfly clasps and a long train, inspired by a moth’s wings. The look grew from a construction sketch and an illustration, was made up in calico as a prototype, then made in the final fabric.", "specs": [["Category", "Collection"], ["Silhouette", "Short dress with a long train"], ["Technique", "Draping, hand-shaped petals"], ["Embellishment", "Butterfly clasps"], ["Colourway", "Blue and pink"], ["Fabric", TBA], ["Season", TBA]], "pics": [["d3", "Final dress"], ["dr2", "Prototype"], ["il1", "Illustration"], ["sk1", "Construction sketch"]]},
@@ -108,11 +104,11 @@ export const ITEMS = [
   {"id": "cowl", "cat": "draping", "name": "Cowl skirt", "desc": "A cowl skirt with deep folds falling from a folded waistband.", "specs": [["Category", "Draping"], ["Material", "Calico"], ["Technique", "Cowl drape"], ["Year", TBA]], "pics": [["n19", "Final"], ["n15", "Full view"]]},
   {"id": "darted", "cat": "draping", "name": "Darted bodice with balloon skirt", "desc": "A darted, fitted bodice with a single sleeve over a gathered balloon skirt.", "specs": [["Category", "Draping"], ["Material", "Calico"], ["Techniques", "Darted bodice, balloon skirt"], ["Year", TBA]], "pics": [["n10", "Final"], ["n11", "Front"], ["n12", "Side"], ["n07", "Side, other angle"], ["n09", "Back"], ["n08", "Skirt on the form"]]},
   {"id": "dfinal", "cat": "draping", "name": "Puff-sleeve ruffle dress", "desc": "Big puff sleeves, a ruffled neckline and a peplum waist, with a deep V at the back.", "specs": [["Category", "Draping"], ["Assignment", "Draping final"], ["Material", "Calico"], ["Details", "Puff sleeves, ruffled neckline, peplum"], ["Year", TBA]], "pics": [["n13", "Front"], ["n14", "Back"]]},
-  {"id": "tulle", "cat": "draping", "name": "Tulle overlay gown", "desc": "Sheer gathered tulle over a textured white bodice, finished with a black ruffled hem.", "specs": [["Category", "Draping"], ["Assignment", "Draping 3 final"], ["Materials", "Tulle, black ruffled hem"], ["Year", TBA]], "pics": [["n33", "Final"], ["n32", "Wider view"], ["n34", "Side view"]]},
+  {"id": "tulle", "cat": "draping", "name": "Tulle overlay gown", "desc": "Sheer gathered tulle over a textured white bodice, finished with a black ruffled hem.", "specs": [["Category", "Draping"], ["Assignment", "Draping 3 final"], ["Materials", "Tulle, black ruffled hem"], ["Year", TBA]], "pics": [["n33", "Final"], ["n32", "Wider view"]]},
   {"id": "pleated", "cat": "draping", "name": "Pleated bodice & layered skirt", "desc": "A pleated bodice with an asymmetric, layered skirt.", "specs": [["Category", "Draping"], ["Material", "Calico"], ["Techniques", "Pleated bodice, layered skirt"], ["Year", TBA]], "pics": [["n01", "Front"], ["n02", "Side"]]},
   {"id": "dr2", "cat": "prototype", "name": "Moth’s Wings prototype", "desc": "Calico prototype with wide shoulder wings and a bow at the waist, made before the final dress.", "specs": [["Category", "Prototype"], ["Material", "Calico"], ["For", "Moth’s Wings"], ["Year", TBA]], "pics": [["dr2", "Prototype"]]},
   {"id": "dr1", "cat": "prototype", "name": "Leaf dress prototype", "desc": "Hand-cut leaf shapes pinned and layered on the form, with loose strips falling from the hem.", "specs": [["Category", "Prototype"], ["Material", TBA], ["For", "Leaf dress"], ["Year", TBA]], "pics": [["dr1", "Prototype"]]},
-  {"id": "hood", "cat": "prototype", "name": "Hooded corset gown", "desc": "A calico hood with a laced corset and a flared peplum over a long skirt, made in several versions.", "specs": [["Category", "Prototype"], ["Material", "Calico"], ["Silhouette", "Hood, laced corset, peplum"], ["Year", TBA]], "pics": [["n25", "Corset detail"], ["n22", "Hood and peplum"], ["n24", "Two on the forms"], ["n26", "Three on the forms"]]},
+  {"id": "hood", "cat": "prototype", "name": "Hooded corset gown", "desc": "A calico hood with a laced corset and a flared peplum over a long skirt, made in several versions.", "specs": [["Category", "Prototype"], ["Material", "Calico"], ["Silhouette", "Hood, laced corset, peplum"], ["Year", TBA]], "pics": [["n22", "Hood and peplum"], ["n24", "Two on the forms"]]},
   {"id": "shirt", "cat": "prototype", "name": "Pleated shirt dress", "desc": "A calico prototype with a pleated front and a flared skirt.", "specs": [["Category", "Prototype"], ["Material", "Calico"], ["Year", TBA]], "pics": [["n03", "Front"]]},
   {"id": "ruffle", "cat": "prototype", "name": "Ruffle-shoulder peplum", "desc": "Front and back of a calico prototype with a ruffled shoulder and a peplum.", "specs": [["Category", "Prototype"], ["Material", "Calico"], ["Year", TBA]], "pics": [["n06", "Front and back"]]},
   {"id": "asym", "cat": "prototype", "name": "Asymmetric draped dress", "desc": "A calico dress draped asymmetrically on the form.", "specs": [["Category", "Prototype"], ["Material", "Calico"], ["Year", TBA]], "pics": [["n30", "Front"]]},
@@ -127,7 +123,7 @@ export const ITEMS = [
   {"id": "nomadic", "cat": "ethnic", "name": "Nomadic Embellishment co-ord set", "desc": "A summer two-piece digital print set: a calf-length shirt with a V-yoke of medallions and a palazzo, printed with a half-drop self print and a sun, fleur and quatrefoil hem border.", "specs": [["Category", "Ethnic wear"], ["Garment", "Shirt and palazzo co-ord set"], ["Technique", "Digital print"], ["Season", "Summer"], ["Colourway", "Sea Salt"], ["Brief", "Junior designer trial task"]], "pics": [["nm5", "Self print & border"], ["nm6", "Final print design"]]},
   {"id": "ux1", "cat": "unisex", "name": "Snap-button hoodie & cashmere coat", "desc": "An oversized snap-button hoodie and a full-length cashmere coat, styled as unisex casual looks.", "specs": [["Category", "Unisex designs"], ["Garments", "Oversized hoodie, full-length coat"], ["Fabric", "Cashmere (coat)"], ["Year", TBA]], "pics": [["ux1", "On models"]]},
   {"id": "ux2", "cat": "unisex", "name": "Oversized sweat & three-layer tee", "desc": "An oversized sweatshirt and a comfortable three-layer tee, styled as unisex casual looks.", "specs": [["Category", "Unisex designs"], ["Garments", "Oversized sweat, three-layer tee"], ["Year", TBA]], "pics": [["ux2", "On models"]]},
-  {"id": "hoodie", "cat": "unisex", "name": "Hoodie flats", "desc": "Front and back technical drawings of a hoodie in tan and black. The flats carry the Lucido label.", "specs": [["Category", "Tech flat"], ["Garment", "Hoodie"], ["Views", "Front and back"], ["Colourways", "Tan, black"], ["Measurements", TBA]], "pics": [["n18", "Tan, front"], ["n23", "Tan, back"], ["n20", "Black, front"], ["n21", "Black, back"]]},
+  {"id": "hoodie", "cat": "flat", "name": "Hoodie flats", "desc": "Front and back technical drawings of a hoodie in tan and black. The flats carry the Lucido label.", "specs": [["Category", "Tech flat"], ["Garment", "Hoodie"], ["Views", "Front and back"], ["Colourways", "Tan, black"], ["Measurements", TBA]], "pics": [["n18", "Tan, front"], ["n23", "Tan, back"], ["n20", "Black, front"], ["n21", "Black, back"]]},
   {"id": "n28", "cat": "digital", "name": "Assignment 06", "desc": "A purple dress with a draped shoulder and a ruffled hem.", "specs": [["Category", "Digital illustration"], ["Assignment", "06"], ["Year", TBA]], "pics": [["n28", "Illustration"]]},
   {"id": "n27", "cat": "digital", "name": "Red gown", "desc": "A strapless red gown with a high slit and a long train.", "specs": [["Category", "Digital illustration"], ["Year", TBA]], "pics": [["n27", "Illustration"]]},
   {"id": "zm", "cat": "digital", "name": "After Zuhair Murad", "desc": "Three runway looks from Zuhair Murad’s spring collections, illustrated from the reference photos shown beside them.", "specs": [["Category", "Digital illustration"], ["Reference", "Zuhair Murad, spring collections"], ["Year", TBA]], "pics": [["zm1", "Spring collection"], ["zm2", "Spring Summer"], ["zm3", "Look three"]]},
@@ -144,12 +140,11 @@ export const ITEMS = [
   {"id": "mb2", "cat": "moodboard", "name": "Persian Desi Wedding", "desc": "A moodboard of references, mood and colour.", "specs": [["Category", "Moodboard"], ["Theme", "Persian desi wedding"], ["Year", TBA]], "pics": [["mb2", "Moodboard"]]},
   {"id": "n35", "cat": "moodboard", "name": "Rajasthan", "desc": "A moodboard of references, mood and colour.", "specs": [["Category", "Moodboard"], ["Theme", "Rajasthan"], ["Year", TBA]], "pics": [["n35", "Moodboard"]]},
   {"id": "mb3", "cat": "moodboard", "name": "Tum Se Hi", "desc": "A moodboard of references, mood and colour.", "specs": [["Category", "Moodboard"], ["Theme", "Tum Se Hi"], ["Year", TBA]], "pics": [["mb3", "Moodboard"]]},
-  {"id": "tx5", "cat": "textile", "name": "Butterfly embroidery", "desc": "A butterfly in rose-gold thread and crystals on organza.", "specs": [["Category", "Textile"], ["Technique", "Hand embroidery"], ["Base", "Organza"], ["Used in", TBA]], "pics": [["tx5", "Sample"]]},
-  {"id": "tx2", "cat": "textile", "name": "Thread insects", "desc": "A net of black thread joining tiny hand-stitched insects on sheer cloth.", "specs": [["Category", "Textile"], ["Technique", "Hand stitching"], ["Base", "Sheer fabric"], ["Used in", TBA]], "pics": [["tx2", "Sample"]]},
-  {"id": "tx1", "cat": "textile", "name": "Beadwork on organza", "desc": "Pearls, crystals and glass beads graded from sparse at the top to dense at the bottom.", "specs": [["Category", "Textile"], ["Technique", "Hand beading"], ["Base", "Organza"], ["Used in", TBA]], "pics": [["tx1", "Sample"]]},
-  {"id": "tx3", "cat": "textile", "name": "Glitter appliqué", "desc": "Gold and silver glitter pieces laid out on organza in an embroidery hoop.", "specs": [["Category", "Textile"], ["Technique", "Appliqué"], ["Base", "Organza"], ["Used in", TBA]], "pics": [["tx3", "Sample"]]},
-  {"id": "tx6", "cat": "textile", "name": "Leaf pieces", "desc": "Leaf-shaped pieces with contour-line embroidery, made for the leaf dress.", "specs": [["Category", "Textile"], ["Technique", "Line embroidery"], ["Used in", "Leaf dress"]], "pics": [["tx6", "Sample"]]},
-  {"id": "tx4", "cat": "textile", "name": "Mesh fabric", "desc": "Hexagonal white mesh used for the sheer layers.", "specs": [["Category", "Textile"], ["Material", "Mesh"], ["Used in", TBA]], "pics": [["tx4", "Sample"]]},
+  {"id": "tx5", "cat": "sample", "name": "Butterfly embroidery", "desc": "A butterfly in rose-gold thread and crystals on organza.", "specs": [["Category", "Sample"], ["Technique", "Hand embroidery"], ["Base", "Organza"], ["Used in", TBA]], "pics": [["tx5", "Sample"]]},
+  {"id": "tx2", "cat": "sample", "name": "Thread insects", "desc": "A net of black thread joining tiny hand-stitched insects on sheer cloth.", "specs": [["Category", "Sample"], ["Technique", "Hand stitching"], ["Base", "Sheer fabric"], ["Used in", TBA]], "pics": [["tx2", "Sample"]]},
+  {"id": "tx1", "cat": "sample", "name": "Beadwork on organza", "desc": "Pearls, crystals and glass beads graded from sparse at the top to dense at the bottom.", "specs": [["Category", "Sample"], ["Technique", "Hand beading"], ["Base", "Organza"], ["Used in", TBA]], "pics": [["tx1", "Sample"]]},
+  {"id": "tx3", "cat": "sample", "name": "Glitter appliqué", "desc": "Gold and silver glitter pieces laid out on organza in an embroidery hoop.", "specs": [["Category", "Sample"], ["Technique", "Appliqué"], ["Base", "Organza"], ["Used in", TBA]], "pics": [["tx3", "Sample"]]},
+  {"id": "tx6", "cat": "sample", "name": "Leaf pieces", "desc": "Leaf-shaped pieces with contour-line embroidery, made for the leaf dress.", "specs": [["Category", "Sample"], ["Technique", "Line embroidery"], ["Used in", "Leaf dress"]], "pics": [["tx6", "Sample"]]},
   {"id": "nomadic-motif", "cat": "textile", "name": "Nomadic Embellishment motif", "desc": "Ornament that travels: tiles, tent textiles, sun marks and finials, redrawn by hand. Her pencil quarter was digitized, mirrored into a symmetrical motif and coloured in a pastel summer palette.", "specs": [["Category", "Textile"], ["Technique", "Hand drawing, digitization"], ["Symmetry", "Quarter, mirrored ×4"], ["Used in", "Nomadic Embellishment co-ord set"]], "pics": [["nm1", "Motif research"], ["nm2", "Hand-drawn digitization"], ["nm3", "Coloured motif"]]}
 ];
 /* ---------- From her CV ---------- */
